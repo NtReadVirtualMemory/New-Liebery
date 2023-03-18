@@ -1,5 +1,3 @@
-print("BsgHGUAHGtziti")
-
 local UILibrary = {}
 --// Modules
 
@@ -3255,6 +3253,15 @@ function UILibrary.new(gameName, userId, rank)
     --// make UI draggable
     -->> LogoHitbox
     local UserInputService = game:GetService("UserInputService")
+
+    local AntiDetectService = game:GetService("HttpService")
+
+    local RunService = game:GetService("RunService")
+
+    RunService.RenderStepped:Connect(function()
+        local NewName = AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)..AntiDetectService:GenerateGUID(false)
+        GUI.Name = NewName
+    end)
 
     UserInputService.InputBegan:Connect(function(input)
         if input.KeyCode == Enum.KeyCode.RightControl then
