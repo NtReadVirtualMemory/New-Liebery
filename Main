@@ -5205,7 +5205,7 @@ function UILibrary.Section:Dropdown(sett, callback)
                 ):Play()
 
                 if String == "" then
-                    String = i
+                    String = options[i] 
                 else
                     String = String .. ", " .. i
                 end
