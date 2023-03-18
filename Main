@@ -1,4 +1,4 @@
-print("uganda")
+print("uganda22")
 
 local UILibrary = {}
 --// Modules
@@ -5187,7 +5187,7 @@ function UILibrary.Section:Dropdown(sett, callback)
     local menuOpen = false
 
     local options = sett.Options ~= nil and sett.Options or {}
-    local selectedOptions = {}
+    local selectedOptions
 
     local optionConnections = {}
 
@@ -5505,7 +5505,9 @@ function UILibrary.Section:Dropdown(sett, callback)
     end
 
     functions.getValue = function()
-        return selectedOptions
+        if selectedOptions ~= nil then
+            return selectedOptions
+        end
     end
 
     local meta =
