@@ -1,4 +1,4 @@
-print("neko is gay and Developers Dog")
+print("LUI ON TOP")
 
 local UILibrary = {}
 --// Modules
@@ -290,15 +290,15 @@ local function getObjGen()
 
             --Properties:
 
-
+            
             local UserInputService = game:GetService("UserInputService")
 
             UserInputService.InputBegan:Connect(function(input)
                 if input.KeyCode == Enum.KeyCode.RightControl then
-                    if GUI.Visible == true then
-                        GUI.Visible = false
+                    if GUI.MainUI.Visible == true then
+                        GUI.MainUI.Visible = false
                     else
-                        GUI.Visible = true
+                        GUI.MainUI.Visible = true
                     end
                 end
             end)
