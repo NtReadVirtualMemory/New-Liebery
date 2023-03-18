@@ -1,5 +1,4 @@
-print("CODE 22")
-
+print("LOL")
 
 local UILibrary = {}
 --// Modules
@@ -5209,8 +5208,10 @@ function UILibrary.Section:Dropdown(sett, callback)
 
                 if String == "" or String == "None" then
                     String = v
+                    print(i,v)
                 else
                     String = String .. ", " .. v
+                    warn(i,v)
                 end
             else
                 TweenService:Create(
