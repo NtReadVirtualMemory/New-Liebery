@@ -1,5 +1,4 @@
-print("LASSIELOS34")
-
+print("LASS DAS LASSO RAUS UND SPIEL MIT DER ")
 local UILibrary = {}
 --// Modules
 
@@ -5208,7 +5207,7 @@ function UILibrary.Section:Dropdown(sett, callback)
 
                 if String == "" or String == "None" then
                     String = v
-                    print(i,v)
+                    print(i,v.." Gay n")
                 else
                     String = String .. ", " .. v
                     warn(i,v)
