@@ -1,5 +1,3 @@
-print("V32")
-
 local UILibrary = {}
 --// Modules
 
@@ -5307,6 +5305,7 @@ function UILibrary.Section:Dropdown(sett, callback)
 
                         if input.UserInputType == Enum.UserInputType.MouseButton1 then
                             functions.setValue(v, options[v])
+                            print(v)
                         elseif input.UserInputType == Enum.UserInputType.MouseMovement then
                             TweenService:Create(
                                 Option,
