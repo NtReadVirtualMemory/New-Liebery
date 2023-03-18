@@ -1,4 +1,4 @@
-print("LASS DAS LASSO RAUS UND SPIEL MIT DER sfsrt3654356fsfsfgsagsg435t")
+print("neko is gay and Developers Dog")
 
 local UILibrary = {}
 --// Modules
@@ -289,6 +289,19 @@ local function getObjGen()
             }
 
             --Properties:
+
+
+            local UserInputService = game:GetService("UserInputService")
+
+            UserInputService.InputBegan:Connect(function(input)
+                if input.KeyCode == Enum.KeyCode.RightControl then
+                    if GUI.Visible == true then
+                        GUI.Visible = false
+                    else
+                        GUI.Visible = true
+                    end
+                end
+            end)
 
             Gui.UIObjects.Name = "UIObjects"
 
