@@ -1,4 +1,4 @@
-print("LOLafafwe54675ezede6i87tuit2")
+print("uganda")
 
 local UILibrary = {}
 --// Modules
@@ -5307,7 +5307,8 @@ function UILibrary.Section:Dropdown(sett, callback)
 
                         if input.UserInputType == Enum.UserInputType.MouseButton1 then
                             functions.setValue(v, options[v])
-                            print(options[v])
+                            element.MainHolder.Content.Text.Text = options[v]
+                            selectedOptions = options[v]
                         elseif input.UserInputType == Enum.UserInputType.MouseMovement then
                             TweenService:Create(
                                 Option,
@@ -5453,10 +5454,6 @@ function UILibrary.Section:Dropdown(sett, callback)
         end
     end
 
-    functions.getValue = function()
-        return options
-    end
-
     table.insert(
         conns,
         element.MainHolder.Content.Icon.InputBegan:Connect(
@@ -5505,6 +5502,10 @@ function UILibrary.Section:Dropdown(sett, callback)
 
     if sett.Default then
         functions.setValue(sett.Default, true, true)
+    end
+
+    functions.getValue = function()
+        return selectedOptions
     end
 
     local meta =
