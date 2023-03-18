@@ -1,4 +1,4 @@
-print("LOLHIAHGAHG")
+print("LOLafafwe54675ezede6i87tuit")
 
 local UILibrary = {}
 --// Modules
@@ -5307,7 +5307,7 @@ function UILibrary.Section:Dropdown(sett, callback)
 
                         if input.UserInputType == Enum.UserInputType.MouseButton1 then
                             functions.setValue(v, options[v])
-                            print(v)
+                            print(options[v])
                         elseif input.UserInputType == Enum.UserInputType.MouseMovement then
                             TweenService:Create(
                                 Option,
