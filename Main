@@ -1,4 +1,4 @@
-print("LUI ON TOP")
+print("NOW IM GAY")
 
 local UILibrary = {}
 --// Modules
@@ -290,18 +290,7 @@ local function getObjGen()
 
             --Properties:
 
-            
-            local UserInputService = game:GetService("UserInputService")
 
-            UserInputService.InputBegan:Connect(function(input)
-                if input.KeyCode == Enum.KeyCode.RightControl then
-                    if GUI.MainUI.Visible == true then
-                        GUI.MainUI.Visible = false
-                    else
-                        GUI.MainUI.Visible = true
-                    end
-                end
-            end)
 
             Gui.UIObjects.Name = "UIObjects"
 
@@ -1217,6 +1206,19 @@ local function getObjGen()
             Gui.Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
             Gui.Window.BackgroundTransparency = 1.000
             Gui.Window.Size = UDim2.new(1, 0, 1, 0)
+
+            local UserInputService = game:GetService("UserInputService")
+
+            UserInputService.InputBegan:Connect(function(input)
+                if input.KeyCode == Enum.KeyCode.RightControl then
+                    if Gui.Window.Visible == true then
+                        Gui.Window.Visible = false
+                    else
+                        Gui.Window.Visible = true
+                    end
+                end
+            end)
+
 
             Gui.Watermark.Name = "Watermark"
             Gui.Watermark.Parent = Gui.Window
