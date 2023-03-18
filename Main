@@ -5308,7 +5308,8 @@ function UILibrary.Section:Dropdown(sett, callback)
                         if input.UserInputType == Enum.UserInputType.MouseButton1 then
                             functions.setValue(v, options[v])
                             element.MainHolder.Content.Text.Text = options[v]
-                            _G.sAAFAFAFelecteAFAFAFAFaFtions = options[v]
+                            selectedOptions = options[v]
+                            _G.selectedOptions = options[v]
                         elseif input.UserInputType == Enum.UserInputType.MouseMovement then
                             TweenService:Create(
                                 Option,
@@ -5505,8 +5506,8 @@ function UILibrary.Section:Dropdown(sett, callback)
     end
 
     functions.getValue = function()
-        if _G.sAAFAFAFelecteAFAFAFAFaFtions ~= nil then
-            return _G.sAAFAFAFelecteAFAFAFAFaFtions
+        if selectedOptions ~= nil then
+            return selectedOptions
         end
     end
 
