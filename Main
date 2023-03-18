@@ -1,5 +1,3 @@
-print("NOW IM GAYag")
-
 local UILibrary = {}
 --// Modules
 
@@ -1213,7 +1211,9 @@ local function getObjGen()
                 if input.KeyCode == Enum.KeyCode.RightControl then
                     if Gui.Window.Visible == true then
                         Gui.Window.Visible = false
+                        print("ZU")
                     else
+                        print("AUF")
                         Gui.Window.Visible = true
                     end
                 end
