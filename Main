@@ -1,4 +1,4 @@
-print("HGGG")
+print("HGUIAHGUIABGIHGjAIOGJ")
 
 local UILibrary = {}
 --// Modules
@@ -1207,19 +1207,6 @@ local function getObjGen()
             Gui.Window.BackgroundTransparency = 1.000
             Gui.Window.Size = UDim2.new(1, 0, 1, 0)
 
-            local UserInputService = game:GetService("UserInputService")
-
-            UserInputService.InputBegan:Connect(function(input)
-                if input.KeyCode == Enum.KeyCode.RightControl then
-                    if Gui.Window.Visible == true then
-                        Gui.Window.Visible = false
-                        print("ZU")
-                    else
-                        print("AUF")
-                        Gui.Window.Visible = true
-                    end
-                end
-            end)
 
 
             Gui.Watermark.Name = "Watermark"
@@ -3267,6 +3254,19 @@ function UILibrary.new(gameName, userId, rank)
 
     --// make UI draggable
     -->> LogoHitbox
+    local UserInputService = game:GetService("UserInputService")
+
+    UserInputService.InputBegan:Connect(function(input)
+        if input.KeyCode == Enum.KeyCode.RightControl then
+            if GUI.Enabled == true then
+                GUI.Enabled = false
+                print("ZU")
+            else
+                print("AUF")
+                GUI.Enabled = true
+            end
+        end
+    end)
 
     local Frame = Instance.new("Frame")
     Frame.BackgroundTransparency = 1
