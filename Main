@@ -1,4 +1,4 @@
-print("LOL2")
+print("LOLWWW")
 
 local UILibrary = {}
 --// Modules
@@ -5206,8 +5206,8 @@ function UILibrary.Section:Dropdown(sett, callback)
                     }
                 ):Play()
 
-                if String == "" then
-                    String = options[i] 
+                if String == "" or String == "None" then
+                    String = i
                 else
                     String = String .. ", " .. i
                 end
