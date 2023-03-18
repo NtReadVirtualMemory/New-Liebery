@@ -150,7 +150,8 @@ function Library.Main(text : string)
         Draggable = true
     })
 
-    local LogoIcon = make("ImageLabel",{
+    --[[
+        local LogoIcon = make("ImageLabel",{
         Parent = Main;
         Name = "LogoIcon";
         AnchorPoint = Vector2.new(0,0);
@@ -164,6 +165,7 @@ function Library.Main(text : string)
         ScaleType = Enum.ScaleType["Crop"];
         ZIndex = 3;
     })
+    ]]
 
     local MainStroke = make("UIStroke",{
         Parent = Main;
