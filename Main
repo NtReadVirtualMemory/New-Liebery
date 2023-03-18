@@ -1,4 +1,4 @@
-print("LOL22rsagt")
+print("GAYYY")
 
 local UILibrary = {}
 --// Modules
@@ -5296,6 +5296,8 @@ function UILibrary.Section:Dropdown(sett, callback)
             Option.Size = UDim2.fromScale(1, 1 / totalCounter)
 
             Option.Current.Text = v
+
+            print("Current:",v)
 
             table.insert(
                 optionConnections,
